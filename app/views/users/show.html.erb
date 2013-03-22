@@ -6,9 +6,24 @@
 </p>
 
 <p>
+  <b>Middlename:</b>
+  <%= @user.middlename %>
+</p>
+<p>
   <b>Lastname:</b>
   <%= @user.lastname %>
 </p>
+<p>
+  <b>Date Of Birth:</b>
+  <%= @user.dateofbirth %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @user.location %>
+</p>
+
+
 
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
