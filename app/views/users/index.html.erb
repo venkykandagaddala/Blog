@@ -7,6 +7,11 @@
     <th>Middlename</th>
     <th>DateOfBirth</th>
     <th>Location</th>
+    <th>Address</th>
+    <th>Email Id</th>
+    <th>PrimaryPhoneNo</th>	
+	<th>SecondaryPhoneNo</th>
+
   </tr>
 
 <% @users.each do |user| %>
@@ -15,7 +20,14 @@
     <td><%= user.lastname %></td>
 	<td><%= user.middlename %></td>
 	<td><%= user.dateofbirth %></td>
-	<td><%= user.location %></td>
+    <td><%= user.location %></td>
+	<td><%= user.address %></td>
+	<td><%= user.email %></td>
+    <td><%= user.primaryphoneno %></td>
+	<td><%= user.secondaryphoneno %></td>
+
+
+	
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>
     <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
