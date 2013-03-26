@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130325070457) do
+ActiveRecord::Schema.define(:version => 20130326062049) do
 
   create_table "comments", :force => true do |t|
     t.string   "commenter"
@@ -51,13 +51,14 @@ ActiveRecord::Schema.define(:version => 20130325070457) do
     t.string   "lastname"
     t.datetime "created_at",                      :null => false
     t.datetime "updated_at",                      :null => false
-    t.string   "middlename"
     t.date     "dateofbirth",      :limit => 255
     t.string   "location"
     t.text     "address"
     t.string   "email"
     t.integer  "primaryphoneno"
     t.integer  "secondaryphoneno"
+    t.string   "name"
+    t.integer  "age"
   end
 
 end

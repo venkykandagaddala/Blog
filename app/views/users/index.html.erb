@@ -2,32 +2,31 @@
 
 <table>
   <tr>
+    <th>Name</th>
     <th>Firstname</th>
-    <th>Lastname</th>
-    <th>Middlename</th>
+    <th>Lastname</th>    
     <th>DateOfBirth</th>
+    <th>Age</tr>
     <th>Location</th>
     <th>Address</th>
     <th>Email Id</th>
     <th>PrimaryPhoneNo</th>	
-	<th>SecondaryPhoneNo</th>
-
+    <th>SecondaryPhoneNo</th>
+	
   </tr>
 
 <% @users.each do |user| %>
   <tr>
+    <td><%= user.name %></td>
     <td><%= user.firstname %></td>
-    <td><%= user.lastname %></td>
-	<td><%= user.middlename %></td>
+    <td><%= user.lastname %></td>	
 	<td><%= user.dateofbirth %></td>
+	<td><%= user.age %></td>
     <td><%= user.location %></td>
 	<td><%= user.address %></td>
 	<td><%= user.email %></td>
     <td><%= user.primaryphoneno %></td>
-	<td><%= user.secondaryphoneno %></td>
-
-
-	
+	<td><%= user.secondaryphoneno %></td>	
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>
     <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>

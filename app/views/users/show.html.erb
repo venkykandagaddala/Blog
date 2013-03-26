@@ -1,13 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+  <b>Full Name:</b>
+  <%= @user.name%>
+</p>
+<p>
   <b>Firstname:</b>
   <%= @user.firstname %>
-</p>
-
-<p>
-  <b>Middlename:</b>
-  <%= @user.middlename %>
 </p>
 <p>
   <b>Lastname:</b>
@@ -18,6 +17,11 @@
   <b>Dateofbirth:</b>
   <%= @user.dateofbirth %>
 </p>
+<p>
+  <b>Age:</b>
+  <%= @user.age %>
+</p>
+
 
 <p>
   <b>Location:</b>
@@ -41,11 +45,5 @@
   <b>secondaryphonenoe:</b>
   <%= @user.secondaryphoneno%>
 </p>
-
-
-
-
-
-
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
